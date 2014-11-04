@@ -1,13 +1,9 @@
-exports.start = function(response) {
-  response.writeHead(200,
-      {'Content-type': 'text/plain'});
+exports.start = function(response, cb) {
   response.write('Hello Start!');
-  response.end();
+  cb();
 };
 
-exports.finish = function(response) {
-  response.writeHead(200,
-      {'Content-type': 'text/plain'});
+exports.finish = function(response, cb) {
   response.write('Hello Finish!');
-  response.end();
+  cb();
 };
