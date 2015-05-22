@@ -8,9 +8,9 @@ function route(handle, pathname, response) {
     });
   } else {
     console.log('No handler found to ' + pathname);
-    response.writeHead(404,
+    response.writeHead(200,
         {'Content-type': 'text/plain'});
-    response.write('404 not found!');
+    response.write('Hello Middle!');
     response.end();
   }
 }
