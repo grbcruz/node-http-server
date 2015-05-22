@@ -24,4 +24,12 @@ describe('Testing requestHandler', function(){
       });
     });
   });
+
+describe('/middle', function() {
+    it('should return hello string', function(){
+      requestHandler.finish(response, function() {
+        response.message.should.equal('Hello Middle');
+      });
+    });
+  });
 });
