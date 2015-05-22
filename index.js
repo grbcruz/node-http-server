@@ -7,5 +7,6 @@ var handle = {};
 handle['/'] = requestHandler.start;
 handle['/start'] = requestHandler.start;
 handle['/finish'] = requestHandler.finish;
+handle['/middle'] = requestHandler.midlle;
 
 server.start(router.route, handle);
