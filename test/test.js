@@ -12,7 +12,7 @@ describe('Testing requestHandler', function(){
   describe('/start', function() {
     it('should return hello string', function(){
       requestHandler.start(response, function() {
-        response.message.should.equal('Hello Start!');
+        response.message.should.equal('Hello Start!!');
       });
     });
   });
