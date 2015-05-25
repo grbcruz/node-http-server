@@ -20,7 +20,7 @@ describe('Testing requestHandler', function(){
   describe('/finish', function() {
     it('should return hello string', function(){
       requestHandler.finish(response, function() {
-        response.message.should.equal('Hello Finish!');
+        response.message.should.equal('Hello Finish!!');
       });
     });
   });
@@ -28,7 +28,7 @@ describe('Testing requestHandler', function(){
 describe('/middle', function() {
     it('should return hello string', function(){
       requestHandler.middle(response, function() {
-        response.message.should.equal('Hello Middle!');
+        response.message.should.equal('Hello Middle!!');
       });
     });
   });
